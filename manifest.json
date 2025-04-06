@@ -1,0 +1,14 @@
+{
+    "manifest_version": 3,
+    "name": "YouTube Mute",
+    "version": "1.0.0",
+    "description": "指定した単語をタイトルに含む動画をYouTube上で非表示にします。",
+    "permissions": ["storage"],
+    "content_scripts": [
+        {
+            "matches": ["*://www.youtube.com/*"],
+            "js": ["content.js"]
+        }
+    ],
+    "options_page": "options.html"
+}
